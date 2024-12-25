@@ -7,7 +7,7 @@ function ProtectedRoute({children}) {
 
   if(!token) {
     alert('Please login first!')
-    return <Navigate to='/login' />
+    return <Navigate to='/' />
   }
   return children;
 }

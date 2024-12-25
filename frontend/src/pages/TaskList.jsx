@@ -130,9 +130,17 @@ function TaskList() {
     ));
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('token'); 
+    navigate('/'); 
+  };
+
   return (
     <div className={styles.container}>
-      <h1>Task List</h1>
+      <div className={styles.header}>
+        <h1>Task List</h1>
+        <button className={styles.logoutButton} onClick={handleLogout}>Logout</button>
+      </div>
       <div className={styles.createTaskButton}>
         <button className={styles.addTaskButton} onClick={handleCreateTask}>Add New Task</button>
       </div>

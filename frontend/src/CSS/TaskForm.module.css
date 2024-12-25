@@ -1,0 +1,107 @@
+/* Container for the TaskForm */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    /* Removed overflow: hidden */
+  }
+  
+  /* Heading styling */
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Form Group styling */
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Input and Textarea styling */
+  .input, .textarea, .select {
+    padding: 10px; /* Reduced padding for smaller fields */
+    font-size: 0.9rem; /* Smaller font size */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Ensures it takes full width of container */
+    margin-bottom: 8px;
+    box-sizing: border-box; /* Prevents overflow by including padding and border in element's total width */
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus, .textarea:focus, .select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #d9534f;
+    font-size: 0.875rem;
+  }
+  
+  /* Submit button styling */
+  .submitButton {
+    padding: 12px 20px; /* Slightly reduced padding */
+    font-size: 1rem; /* Slightly reduced font size */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .submitButton:active {
+    background-color: #003d80;
+    transform: scale(0.98);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 1.6rem;
+    }
+  
+    .input, .textarea, .select {
+      font-size: 0.9rem; /* Ensure responsiveness for smaller screens */
+    }
+  
+    .submitButton {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

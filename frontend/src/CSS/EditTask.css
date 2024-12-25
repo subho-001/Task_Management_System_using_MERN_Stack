@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the form */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Error message */
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form input groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Label styling */
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input, Textarea, and Select fields */
+input,
+textarea,
+select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+/* Textarea adjustments */
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Button styling */
+.submit-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    .task-form {
+        gap: 18px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.95rem;
+    }
+
+    .submit-button {
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .task-form {
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        padding: 10px 14px;
+    }
+}
+
+/* Loading state */
+.loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 40px;
+}
+
+/* Extra styling for better form alignment */
+.container .task-form {
+    align-items: stretch;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.submit-button:active {
+    transform: scale(1);
+}

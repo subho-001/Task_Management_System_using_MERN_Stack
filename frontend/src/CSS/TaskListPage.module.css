@@ -1,0 +1,130 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.createTaskButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.taskColumns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.highPriority {
+    color: red;
+}
+
+.mediumPriority {
+    color: orange;
+}
+
+.lowPriority {
+    color: green;
+}
+
+.taskItem {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.taskItem:hover {
+    background-color: #e0f7fa;
+}
+
+.taskItem select {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.addTaskButton:hover {
+    background-color: #218838;
+}
+
+.editButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #0056b3;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginationButton {
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+.paginationButton:hover {
+    background-color: #0056b3;
+}
+
+.statusCompleted {
+    color: green;
+    font-weight: bold;
+}
+
+.statusPending {
+    color: red;
+    font-weight: bold;
+}
